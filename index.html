@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calcEasy() : Friendly Calculator</title>
+    <script src="calceasy.js" defer></script>
+    <script src="calceasy2.js" defer></script>
+    <link rel="stylesheet" href="calceasy.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Shadows+Into+Light&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <div class="homepage">
+      <h1 class="opening" id="opening">calcEasy()</h1>
+      <!-- <input type="text" id="user-name" class="user-name" /> -->
+
+      <div class="open-button">
+        <button class="opener" id="opener">Use CalcEasy &nbsp❯</button>
+      </div>
+    </div>
+
+    <button class="home" id="home">❮ &nbsp Home</button>
+    <h1 class="title" id="title">calcEasy()</h1>
+
+    <div class="calc-container" id="calc-container">
+      <div class="calc-bar">
+        <button class="menu" id="simplecalc">Calculator</button>
+        <button class="menu" id="vectorprodcalc">Vector Product</button>
+        <button class="menu" id="nthrootcalc">nth Root</button>
+        <button class="menu" id="detecalc">Determinant</button>
+      </div>
+
+      <!-- <ul class="dropdowncalc">
+        <li><button id="simplecalc">Calculator</button></li>
+        <li><button id="vectorprodcalc">Vector Product</button></li>
+        <li><button id="nthrootcalc">nth Root</button></li>
+        <li><button id="detecalc">Determinant</button></li>
+      </ul> -->
+
+      <div class="simplecalculator" id="simplecalculator">
+        <h1 id="simple">Simple calculator</h1>
+        <div class="container">
+          <input
+            type="text"
+            class="value first"
+            id="first"
+            placeholder="value1"
+          />
+          <input
+            type="text"
+            class="value second"
+            id="second"
+            placeholder="value2"
+          />
+
+          <div class="operations">
+            <button class="add">+</button>
+            <button class="multiply">×</button>
+
+            <button class="subtract">-</button>
+            <button class="divide">÷</button>
+          </div>
+          <div class="resultbox">
+            Ans:
+            <p class="result" id="result"></p>
+          </div>
+        </div>
+      </div>
+      <div class="vectorprod" id="vectcalculator">
+        <h1 id="vector">Dot & Cross Products</h1>
+
+        <div class="vectorproduct">
+          <div class="coefficients">
+            <input type="text" class="coeff a1" id="a1" placeholder="a1" />
+            <input type="text" class="coeff a2" id="a2" placeholder="a2" />
+            <input type="text" class="coeff a3" id="a3" placeholder="a3" />
+            <div class="seper"></div>
+            <input type="text" class="coeff b1" id="b1" placeholder="b1" />
+            <input type="text" class="coeff b2" id="b2" placeholder="b2" />
+            <input type="text" class="coeff b3" id="b3" placeholder="b3" />
+          </div>
+          <div class="products">
+            <button class="prod dot">Dot</button>
+            <button class="prod cross">Cross</button>
+          </div>
+          <div class="vectorresult">
+            Ans:
+            <p class="vectorresultp" id="vectorprod"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nthrootcalculator" id="nthrootcalculator">
+        <h1>nth root of Number</h1>
+
+        <div class="nthroot-calc">
+          <input type="text" class="base value" id="base" placeholder="base" />
+          <input
+            type="text"
+            class="exponent value"
+            id="exponent"
+            placeholder="'n' value "
+          />
+          <button class="nthroot">a <sup>1/n</sup></button>
+          <div class="nthrootans">
+            Ans:
+            <p class="nthroot-value" id="nthroot-value"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="detecalc" id="detcalculator">
+        <h1>Determinant of Matrix</h1>
+        <div class="det-calc">
+          <div class="elements">
+            <input type="text" class="matrix a11" id="a11" placeholder="a11" />
+            <input type="text" class="matrix a12" id="a12" placeholder="a12" />
+            <input type="text" class="matrix a13" id="a13" placeholder="a13" />
+            <div class="seper"></div>
+            <input type="text" class="matrix a21" id="a21" placeholder="a21" />
+            <input type="text" class="matrix a22" id="a22" placeholder="a22" />
+            <input type="text" class="matrix a23" id="a23" placeholder="a23" />
+            <div class="seper"></div>
+            <input type="text" class="matrix a31" id="a31" placeholder="a31" />
+            <input type="text" class="matrix a32" id="a32" placeholder="a32" />
+            <input type="text" class="matrix a33" id="a33" placeholder="a33" />
+          </div>
+
+          <button class="determine">Det</button>
+
+          <div class="determinant">
+            Ans:
+            <p class="det" id="det-value"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
